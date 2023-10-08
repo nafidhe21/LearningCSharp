@@ -3,12 +3,18 @@ int randomInt = rnd.Next(1, 7);
 
 Console.WriteLine("Dice rolled. Guess what number it shows in 3 tries.");
 
+
 int chances = 3;
 
 while (chances > 0)
 {
-    int userGuess;
     Console.WriteLine("Enter number:");
+    
+}
+
+public void GameLogic()
+{
+    int userGuess;
     bool parseUserGuessToIntSuccessfull = int.TryParse(Console.ReadLine()!, out userGuess);
 
     if (parseUserGuessToIntSuccessfull)
